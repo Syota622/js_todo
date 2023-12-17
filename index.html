@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>ToDo App</title>
+</head>
+<body>
+
+  <!-- 入力フィールドと保存ボタン -->
+  <input type="text" id="todoInput" placeholder="新しいToDoを入力してください...">
+  <button onclick="addTodo()">保存</button>
+
+  <!-- ToDo一覧表示エリア -->
+  <ul id="todoList"></ul>
+
+  <!-- タスクの状態を表示するエリア -->
+  <div>
+    全てのタスク：<span id="totalTasks">0</span>
+    完了済み：<span id="completedTasks">0</span>
+    未完了：<span id="incompleteTasks">0</span>
+  </div>
+
+  <!-- JavaScriptファイルを読み込む -->
+  <script src="script.js"></script>
+
+</body>
+</html>
